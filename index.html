@@ -10,6 +10,7 @@
       - Showcase my jQuery ability
       - Impress whoever reads this
       - Optimize for mobile (1/30/2020) - min-height/max-height on div
+      - Add accessibility/semantic updates (no more div/span)
     Current version: 0.3 1/27/2019 by Aaron Guyett
     -->
 
@@ -17,75 +18,93 @@
   <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Portfolio | Index</title>
-    
     <!-- Texts -->
-    <!-- Footer -->
-    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <!-- Optional for Headers -->
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Kanit|Lobster|Nunito&display=swap" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-
     <!-- Social media button library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-
     <link href="img/favicon.jpg" rel='icon' type="image/x-icon" />
-
-
   </head>
   <body>
-
-    <!-- Add jQuery -->
-    <script src="jquery-3.4.1.min.js"></script>
-
-    <!-- Here's a color scheme?
-      https://coolors.co/dde392-afbe8f-7d8570-000000-36454f
-    -->
-
-    <!-- Navbar to be comepleted and added later
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </nav>
-    -->
     <div class="linegradient"></div>
+    <div class="contact">
+      <a href="mailto:aaron@aarondguyett.com?Subject=From%20website">Contact Me</a>
+    </div>
     <div class="parallax"></div>
-    <div style="background-color: #36454f; min-height: 38em; max-height: 60em" class="module">
-      <h1 class="fade-in">Aaron Guyett's Portfolio</h1>
+    <div style="min-height: 38em; max-height: 60em">
+      <h1 class="fade-in">Aaron Guyett: The Creator</h1>
       <h1 class="ml6" style="margin-top: 0px">
         <span class="text-wrapper">
-          <span class="letters">Coming soon!</span>
+          <span class="letters">Developer and Designer</span>
         </span>
-
-        <!-- Library for the animation script -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <script src="js/main.js"></script>
       </h1>
-
-
+      <div class="skills">
+        <span class="interests">Learn More</span>
+      </div>
+      <div class="table-wrap" id="menu"><table class="table">
+        <tr>
+          <th class="table-head border-side">Software Engineer</th>
+          <th class="table-head border-side">Web Designer</th>
+          <th class="table-head">Other Skills</th>
+        </tr>
+        <tr>
+          <td id="tsectionhead" class="border-side">I use these languages:</td>
+          <td id="tsectionhead" class="border-side">I speak these:</td>
+          <td id="tsectionhead">I also know these:</td>
+        </tr>
+        <tr> </tr>
+        <tr>
+          <td class="trow border-side">Python, Java & C++</td>
+          <td class="trow border-side">HTML, CSS, JavaScript, jQuery, PHP, Sass & SQL</td>
+          <td class="trow">Octave, PySpark & Accurate Deliverable Timelines</td>
+        </tr>
+        <tr><td class="border-side"></td><td class="border-side"></td><td></td></tr>
+        <tr>
+          <td id="tsectionhead" class="border-side">I like to use these:</td>
+          <td id="tsectionhead" class="border-side">And these:</td>
+          <td id="tsectionhead">And sometimes these:</td>
+        </tr>
+        <tr>
+          <td class="trow border-side">PyCharm, GitHub, GitBash, Sublime, Eclipse</td>
+          <td class="trow border-side">Confluence, Jira, Jenkins, Docker, Google Analytics</td>
+          <td class="trow">Android Studio, Workday, AWS</td>
+        </tr>
+        <tr>
+          <td id="tsectionhead" class="border-side">With these, I like to:</td>
+          <td id="tsectionhead" class="border-side">I create and design these:</td>
+          <td id="tsectionhead">I enjoy:</td>
+        </tr>
+        <tr>
+          <td class="trow border-side">Develop front-end applications, games, scripts, or make my day easier with small applications at work</td>
+          <td class="trow border-side">Websites in WordPress & from scratch or inject code into popular web design sites like Squarespace and Wix</td>
+          <td class="trow">Data analysis, communicating, learning & not having sleep</td>
+        </tr>
+        <tr><td class="trow border-side"></td><td class="trow border-side"></td><td class="trow"></td></tr>
+        <tr>
+          <td id="tsectionhead" class="border-side">My current projects include:</td>
+          <td id="tsectionhead" class="border-side">I'm working on:</td>
+          <td id="tsectionhead">I'm currently spending time on:</td>
+        </tr>
+        <tr>
+          <td class="trow border-side">Object-oriented text-adventure game</td>
+          <td class="trow border-side">Portfolio and code injection on a small business website</td>
+          <td class="trow border-side">Mobile Game for iOS</td>
+        </tr>
+      </table></div>
             <!-- Social media icons -->
       <ul class="social">
-        <li><a href="https://github.com/guyett92" target="_blank"><img src="img/github_2.svg" /></a></li>
-        <li><a href="https://linkedin.com/in/aarondguyett" target="_blank"><img src="img/linkedin_2.svg" /></a></li>
-        <li><a href="https://www.instagram.com/aarong_aesthetics/" target="_blank"><img src="img/instagram_2.svg" /></a></li>
-        <li><a href="https://www.hackerrank.com/aaronguyett" target="_blank"><span class="dot-gray"></span><span class="dot-white"></span><img class="hackerrank" src="img/hackerrank.png" /></a></li>
+        <li><a href="https://github.com/guyett92" target="_blank"><img src="img/github_2.svg" alt="GitHub"/></a></li>
+        <li><a href="https://linkedin.com/in/aarondguyett" target="_blank"><img src="img/linkedin_2.svg" alt="LinkedIn"/></a></li>
+        <li><a href="https://www.instagram.com/aarong_aesthetics/" target="_blank"><img src="img/instagram_2.svg" alt="Instagram"/></a></li>
+        <li><a href="https://www.hackerrank.com/aaronguyett" target="_blank"><span class="dot-gray"></span><span class="dot-white"></span><img class="hackerrank" src="img/hackerrank.png" alt="Hacker Rank"/></a></li>
       </ul>
-      <footer><a href="https://aaronguyett.wixsite.com/portfolio" target="_blank" class="footer">Click here to visit the old portfolio.</a></footer>
+      <footer>&copy; Aaron Guyett. 2020. It's another parallax website. Who would've thought? <a href="https://aaronguyett.wixsite.com/portfolio" target="_blank">Click here to visit the old portfolio.</a> Coming soon: projects and contact form.</footer>
     </div>
-
-    <!--FIXME: Change color and add content or remove footer. Add later
-    <div class="footer">
-      <footer>&copy; Aaron Guyett. 2020. It's another parallax website. Who would've thought?</footer>
-    </div>
-    -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
   </body>
-
-  </html> 
+</html> 
 

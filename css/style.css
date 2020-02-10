@@ -1,18 +1,18 @@
 /* Body attributes */
 body {
 	margin: 0px 0px 0px 0px;
-
+  background-color: #36454f;
 }
 
 /* Footer attributes */
 footer {
-	display: inline-block;
 	color: white;
 	margin-top: 13em;
+  position: relative;
 }
 
 nav {
-	background-color: #000000;
+	background-color: white;
 	padding-top: 0px;
 	margin-top: 0px;
 }
@@ -23,14 +23,18 @@ nav ul{
 
 /* Footer link attributes */
 footer a:hover {
-	color: black;
+	color: #0e1111;
+}
+
+footer{
+	color: white;
+	font-size: .7em;
+	font-family: 'Kanit', sans-serif;
 }
 
 footer a {
-	color: white;
-	text-decoration: none;
-	font-size: .7em;
-	font-family: 'Kanit', sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
 #middle {
@@ -52,7 +56,7 @@ footer a {
   background-image: url("../img/code2.jpg");
 
   /* Set a specific height */
-  min-height: 400px; 
+  min-height: 300px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -102,6 +106,7 @@ footer a {
 
 .social {
   text-align: center;
+  margin-top: 5em;
   }
   
 .social li {
@@ -249,3 +254,147 @@ footer a {
     100%{background-position:0% 50%}
 }
 
+/* Contact Button */
+.contact {
+  position:absolute;
+  top: 100px;
+  right: 1px;
+  width: 7em;
+  height: 2em;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  z-index: 1;
+  color: white;
+  background-color: #AFBE8F;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.contact a {
+  top: 50%;
+  line-height: 2em;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  color: white;
+  will-change: transform;
+}
+
+.contact a:hover {
+  color: #0e1111;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.contact:hover {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+  transition: all 200ms;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 0s;
+}
+
+/*Skills Container */
+.skills {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+.skills:hover {
+  position:block;
+}
+
+.interests {
+  border: 2px solid #AFBE8F;
+  background-color: #AFBE8F;
+  border-radius: 10%;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.interests:hover {
+  color: #0e1111;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#menu {
+  margin: 1em auto auto auto;
+  width: 50%;
+  height: 40em;
+  padding: 1em;
+  font-family: 'Nunito', sans-serif;
+  display: none;
+}
+
+.table  {
+  border-collapse: collapse;
+  border-spacing:0;
+  margin: auto;
+  border-radius: 10%;
+  background-color: rgb(245, 245, 245, 0.94);
+}
+
+.table td {
+  font-size:14px;
+  padding: 0.7em 0.7em;
+  overflow:hidden;
+  word-break:normal;
+  text-align: center;
+}
+
+.table th {
+  font-size:14px;
+  font-weight:normal;
+  padding:0.7em;
+  overflow:hidden;
+  word-break:normal;
+  border-color:#ccc;
+  color:#333;
+}
+
+.table .table-head {
+  color:#000000;
+  font-size: 1.4em;
+  text-align:center;
+  vertical-align:top;
+  font-weight: bold;
+  letter-spacing: 0.035em;
+  padding: 0.7em;
+}
+
+.trow {
+  color: #000000;
+}
+
+#tsectionhead {
+  color: #7510F7;
+  font-size: 1em;
+  text-align: center;
+  width: 33%;
+}
+
+.table .trow, .table #tsectionhead {
+  vertical-align:top;
+}
+
+.border-side {
+  border-right: solid 1px rgba(0,0,0, 0.1);
+  border-right
+}
+
+@media screen and (max-width: 767px) {
+  .table {
+    width: auto !important;
+  }
+  .table col {
+    width: auto !important;
+  }
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto 0px;
+  }
+}
