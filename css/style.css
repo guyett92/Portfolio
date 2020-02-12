@@ -38,6 +38,11 @@ footer a {
   text-decoration: none;
 }
 
+/* Used when under 600px */
+.footer-resize {
+  margin-top: 55em;
+}
+
 #middle {
     background-color: #36454f;
     min-height: 38em;
@@ -108,6 +113,21 @@ footer a {
       margin: 0px auto !important;
       overflow: scroll;
     }
+}
+
+@media only screen and (max-width: 340px) {
+  .letter {
+    font-size: 0.4em !important;
+  }
+  .fade-in {
+    font-size: 1.7em !important;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .table-content, .section-head, .software, .web, .other {
+    font-size: 1em !important;
+  }
 }
 
 .social {
@@ -227,6 +247,7 @@ footer a {
 }
 } 
 
+/* Linear Gradient at the top */
 .linegradient {
 	height: 1em;
 	background: linear-gradient(278deg, #00dba3, #44117f);
@@ -325,43 +346,28 @@ footer a {
   font-size: 1.1em;
 }
 
-#menu {
-  margin: 1em auto auto auto;
-  width: 50%;
-  height: 40em;
-  padding: 1em;
-  font-family: 'Nunito', sans-serif;
-  display: none;
-}
-
-.table  {
-  border-collapse: collapse;
-  border-spacing:0;
-  margin: auto;
+/* FlexBox Table */
+.flex-wrapper {
+  margin: 15px;
+  background-color: white;
   border-radius: 10%;
-  background-color: rgb(245, 245, 245, 0.94);
-  margin-bottom: 5em;
 }
 
-.table td {
-  font-size:14px;
-  padding: 0.7em 0.7em;
-  overflow:hidden;
-  word-break:normal;
-  text-align: center;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.table th {
-  font-size:14px;
-  font-weight:normal;
-  padding:0.7em;
-  overflow:hidden;
-  word-break:normal;
-  border-color:#ccc;
-  color:#333;
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
-.table .table-head {
+.software, .web, .other {
   color:#000000;
   font-size: 1.4em;
   text-align:center;
@@ -371,89 +377,48 @@ footer a {
   padding: 0.7em;
 }
 
-.trow {
-  color: #000000;
+.display-wrapper {
+  display: none;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 2em;
 }
 
-#tsectionhead {
+.section-head {
   color: #7510F7;
   font-size: 1em;
-  text-align: center;
-  width: 33%;
-}
-
-.table .trow, .table #tsectionhead {
+  text-align:center;
   vertical-align:top;
+  padding: 0.7em;
 }
 
 .border-side {
   border-right: solid 1px rgba(0,0,0, 0.1);
-  border-right
 }
 
-/* Responsiveness */
-
-/* Maybe used later to convert table to a block element and work with each line
-@media screen and (max-height: 950px) and (max-width: 525px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  tr {
-    border: 1px solid #ccc;
-  }
-
-  td {
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%;
-  }
-
-  td:before {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-
-  td:nth-of-type(1):before {
-    content: "Languages";
-  }
-  td:nth-of-type(2):before {
-    content: "Languages";
-  }
-  td:nth-of-type(3):before {
-    content: "Languages";
-  }
-  td:nth-of-type(4):before {
-    content: "Languages";
-  }
-  td:nth-of-type(5):before {
-    content: "Languages";
-  }
-  td:nth-of-type(6):before {
-    content: "Languages";
-  }
-  td:nth-of-type(7):before {
-    content: "Languages";
-  }
-  td:nth-of-type(8):before {
-    content: "Languages";
-  }
-  td:nth-of-type(9):before {
-    content: "Languages";
-  }
-  td:nth-of-type(10):before {
-    content: "Languages";
+.table-content {
+  text-align: center;
+  margin-bottom: 0.37em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+/* Additional Responsiveness for FlexBox */
+@media only screen and (min-width: 1000px) {
+  .flex-wrapper {
+    margin-left: 10em;
+    margin-right: 10em;
   }
 }
-*/
+
+@media only screen and (min-width: 1350px) {
+  .flex-wrapper {
+    margin-left: 20em;
+    margin-right: 20em;
+  }
+}
+
+@media only screen and (min-width:1600px){
+  .flex-wrapper {
+    margin-left: 30em;
+    margin-right: 30em;
+  }
+}
