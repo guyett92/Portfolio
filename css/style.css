@@ -38,6 +38,13 @@ footer a {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: bold;
+}
+
 /* Used when under 600px */
 .footer-resize {
   margin-top: 55em;
@@ -424,5 +431,124 @@ footer a {
   .flex-wrapper {
     margin-left: 30em;
     margin-right: 30em;
+  }
+}
+
+/* Projects Gallery */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2em;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 15%;
+  overflow: hidden;
+}
+
+.item {
+  margin: 5px;
+  border-radius: 10%;
+  max-width: 30rem;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.image-container:hover .item {
+  transform: scale(1.2);
+}
+
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container:hover .item {
+  opacity: 0.15;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+}
+
+.overlay-button {
+  color: white;
+  padding: 16px 32px;
+}
+
+.button-text {
+  margin-top: 2rem;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-radius: 15%;
+  border: 3px solid #BF5FFF;
+}
+
+.button-text:hover {
+  background-color: #BF5FFF;
+}
+
+.text {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Responsiveness for this container */
+@media only screen and (max-width: 690px) {
+  h1 {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .item {
+    max-width: 25rem;
+  }
+  /* Fixes Button Spacing on smaller screens */
+  .middle-scale {
+    margin-top: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  h1 {
+    margin-top: 20rem;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .item {
+    max-width: 20rem;
+  }
+  .flex-container {
+    font-size: 1em;
+  }
+  .overlay-button {
+    padding: 3px;
   }
 }
