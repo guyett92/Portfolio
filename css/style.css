@@ -45,15 +45,20 @@ h1 {
   font-weight: bold;
 }
 
-/* Used when under 600px */
+/* Used when under 600px
 .footer-resize {
   margin-top: 55em;
 }
+*/
 
 #middle {
     background-color: #36454f;
     min-height: 38em;
     max-height: 60em
+}
+
+.project-header {
+  margin-top: 4rem;
 }
 
 .title {
@@ -143,6 +148,7 @@ h1 {
 
 .social {
   text-align: center;
+  margin-right: 2rem;
   }
   
 .social li {
@@ -190,7 +196,8 @@ h1 {
 /* Position the image correctly */
 .hackerrank {
 	z-index: 3;
-	position: relative;
+  position: relative;
+  display: inline-block;
 }
 
 /* Control of the fade-in */

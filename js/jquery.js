@@ -15,13 +15,3 @@ $(window).scroll(function() {
     var top = winScrollTop + winHeight - floaterHeight - fromBottom;
     $('.contact').css({'top': top + 'px'});
 });
-
-/* Toggle a class for the footer */
-$(".skills").click(function() {
-	var ww = $(window).width();
-	if (ww < 600) {
-		$("footer").toggleClass("footer-resize")
-	}
-});
-
-
