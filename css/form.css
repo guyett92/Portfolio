@@ -1,0 +1,221 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+}
+body
+{
+	background-color: #36454f;
+	color: white;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font-family: 'Nunito', sans-serif;
+}
+
+form {
+    width: 40rem;
+    height: 40rem;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    width: 45rem;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    margin-top: 4.5rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: #BF5FFF;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border-color: #BF5FFF;
+    color: #BF5FFF;
+    margin: 20px 0 80px;
+    border-width: 2px;
+    font-weight: 400;
+    height: auto;
+    border-radius: 290486px;
+    padding-left: calc(1em + 0.25em);
+    padding-right: calc(1em + 0.25em);
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-bottom: calc(0.5em - 1px);
+    padding-top: calc(0.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: none;
+    line-height: 1.5;
+    position: relative;
+    vertical-align: top;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+}
+
+button:hover {
+    background-color: #BF5FFF;
+    color: white;
+}
+
+.content {
+    box-sizing: border-box;
+    clear: both;
+    font-size: 1rem;
+    position: relative;
+    text-align: left;
+    display: block;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.home:hover {
+    background-color: #BF5FFF;
+    color: white;
+}
+
+.alert {
+	margin: 0;
+	color:red;
+}
+.name {
+    margin: auto;
+    float: left;
+    margin-right: 1rem;
+    width: 47%;
+}
+
+.email {
+    width: 47%;
+}
+
+.message {
+    
+}
+
+.input {
+    background-color: white;
+    border-radius: 4px;
+    -webkit-box-align: center;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);;
+    box-shadow: none;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    height: 2.5em;
+    -webkit-box-pack: start;
+    line-height: 1.5;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    position: relative;
+    vertical-align: top;
+    
+}
+
+.textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    -webkit-appearance: textarea;
+    -webkit-rtl-ordering: logical;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 0em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    padding: calc(0.75em - 1px);
+    resize: vertical;
+    border-radius: 4px;
+}
+
+.home {
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 15%;
+    border: 3px solid #BF5FFF;
+}
+.submit {
+
+}
+
+
+/* Linear Gradient at the top */
+.linegradient {
+	height: 1em;
+	background: linear-gradient(278deg, #00dba3, #44117f);
+	background-size: 400% 400%;
+	animation: linegradient 30s ease infinite;
+	-webkit-animation: linegradient 30s ease infinite;
+	-moz-animation: linegradient 30s ease infinite;
+	-o-animation: linegradient 30s ease infinite;
+	
+}
+
+@-webkit-keyframes linegradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes linegradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes linegradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes linegradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
