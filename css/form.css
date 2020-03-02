@@ -219,3 +219,35 @@ button:hover {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+@media only screen and (max-width:720px) {
+    h1{
+        text-align: left;
+        max-width: 30rem;
+    }
+    content, button {
+        max-width: 25rem;
+    }
+}
+
+@media only screen and (max-width:510px) {
+    h1 {
+        max-width: 20rem;
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    button, content {
+        max-width: 17rem;
+    }
+}
+@media only screen and (max-width: 330px) {
+    h1 {
+        max-width: 12rem;
+        font-size: 1.4rem;
+    }
+    button, content {
+        max-width: 12rem;
+    }
+}
