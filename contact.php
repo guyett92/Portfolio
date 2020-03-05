@@ -5,6 +5,7 @@
     <title>Aaron's Portfolio | Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1">
+    <meta name="description" content="Contact Aaron using the form provided or return to the home page to view some projects!">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Kanit|Lobster|Nunito&display=swap" rel="stylesheet">
     <link href="css/form.css" type="text/css" rel="stylesheet">
     <link href="img/favicon.jpg" rel='icon' type="image/x-icon" />
@@ -35,9 +36,10 @@
         }
       }
     ?>
+    <main>
     <div class="linegradient"></div>
     <a class="home" href="https://aarondguyett.com"><div>Go Back</div></a>
-    <h1>Thanks for considering conversing with me. Get your thoughts out through this nifty form.</h1>
+    <h1>I hope you reach out, I'd love to hear from you!</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
         <div class="name content">
             <label for="name">Name</label><br>
@@ -55,7 +57,7 @@
             <p class="alert"><?php if(isset($message_error)) echo $message_error; ?></p>
         </div>
         <div class="submit">
-            <button type="submit" name="submit" value="Submit">Submit</button>
+            <button type="submit" name="submit" id="submit" value="Submit">Submit</button>
         </div>
         <?php 
             if(isset($_POST['submit']) && !isset($name_error) && !isset($email_error) && !isset($message_error)){
@@ -69,6 +71,10 @@
             }
         ?>
     </form>
+    <footer>
+        &copy; Aaron Guyett. 2020. <a href="https://aaronguyett.wixsite.com/portfolio" target="_blank">Click here to visit the old portfolio.</a> Coming soon: more projects.
+    </footer>
+    </main>
   
   </body>
 </html>

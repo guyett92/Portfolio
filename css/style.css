@@ -45,6 +45,12 @@ h1 {
   font-weight: bold;
 }
 
+/* Used when under 600px
+.footer-resize {
+  margin-top: 55em;
+}
+*/
+
 #middle {
     background-color: #36454f;
     min-height: 38em;
