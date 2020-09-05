@@ -1,2 +1,7 @@
 # Portfolio
-Personal development project. Creating my portfolio step-by-step. New portfolio coming soon!
+My old static portfolio. A lot of time and practice went into this as I wrote each line of code myself. There's a lot of interactiveness which seems to be a theme in things I create.
+## Technologies Used
+* jQuery
+* JavaScript
+* HTML
+* CSS
